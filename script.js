@@ -10,6 +10,7 @@ let alarmWrapper = document.querySelector(".set-wrapper")
 let setText = document.querySelector(".text")
 let audio = document.querySelector("audio")
 
+
 function startTime() {
     const date = new Date()
     let hours = date.getHours()
@@ -23,7 +24,7 @@ function startTime() {
         hours -= 12
         hoursHTML.innerHTML = hours
         timeSelector.innerHTML = " PM"
-    } else if (hours < 12) { timeSelector.innerHTML = " AM" }
+    } else { timeSelector.innerHTML = " AM" }
 
     if (minutes <= 9) {
         minutes = `0${minutes}`
@@ -61,7 +62,7 @@ function startTime() {
         setText.className = "text-fadein"
     }
 
-    setInterval(startTime, 1000)
+    setTimeout(startTime, 1000)
 }
 startTime()
 
