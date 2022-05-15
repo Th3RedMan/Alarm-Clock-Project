@@ -1,0 +1,71 @@
+body {
+    background-color: black;
+}
+
+h1 {
+    font-size: 10rem;
+    color: cyan;
+    font-family: 'Raleway', sans-serif;
+    text-shadow: 3px 3px white;
+}
+
+.text-fadein {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 20%;
+    left: 50%;
+    color: white;
+    font-size: 10rem;
+    opacity: 0;
+    transition: opacity 3s;
+    pointer-events: none;
+
+}
+
+div.time-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.alarm-stop {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.alarm-active {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+    width: 15rem;
+    left: 50%;
+    top: 40%;
+}
+
+.alarm-time {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 45%;
+    top: 40%;
+    width: 10rem;
+    font-size: 3rem;
+}
+
+.alarm-set {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 55%;
+    top: 40%;
+    width: 10rem;
+    height: 4rem;
+}
+
+.set-invisible {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.set-visible {
+    opacity: 1;
+}
